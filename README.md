@@ -5,15 +5,15 @@
 <p id="description">Integration with TikTokLive Python Lib creating a real-time Web Widget with the Geometry Dash Levels that live viewers send via chat. Creating a connection between streamer and viewer.</p>
 
 <h2>Project Screenshots:</h2>
-
-<img src="https://i.imgur.com/ho2TBkf.png" alt="project-screenshot" width="500" height="500/">
+<div align="center">
+<img src="https://i.imgur.com/ho2TBkf.png" alt="project-screenshot" width="1000" height="500/">
 
 <img src="https://i.imgur.com/WiI9dh2.png" alt="project-screenshot" width="300" height="500/">
 
 <img src="https://i.imgur.com/uHiag72.png" alt="project-screenshot" width="300" height="500/">
 
-<img src="https://i.imgur.com/d8qV4rp.png" alt="project-screenshot" width="300" height="300/">
-
+<img src="https://i.imgur.com/d8qV4rp.png" alt="project-screenshot" width="300" height="500/">
+</div>
   
   
 <h2>🧐 Features</h2>
