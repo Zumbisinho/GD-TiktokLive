@@ -183,8 +183,6 @@ def startServer(username:str,port:int):
 
 
 if __name__ == "__main__":
-    startServer('zumbisinho_',5000)
-    #startTikTok('zumbisinho_')
-    sleep(9999999)
+    messagebox.showerror("Dont open this file","This file is not mean to be open\nExecute the GD Level Requests shortcut to open GD TikTokLive")
     
    

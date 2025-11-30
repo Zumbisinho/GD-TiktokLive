@@ -6,6 +6,7 @@ import asyncio
 from typing import Callable, Optional
 import re
 import os
+from tkinter import messagebox
 
 
 
@@ -164,3 +165,6 @@ def startCloudFlare():
 
     # Iniciar o loop async dessa thread
     loop.run_forever()
+
+if __name__ == "__main__":
+    messagebox.showerror("Dont open this file","This file is not mean to be open\nExecute the GD Level Requests shortcut to open GD TikTokLive")

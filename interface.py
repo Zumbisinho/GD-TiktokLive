@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import font
+from tkinter import font,messagebox
 from pyperclip import copy as copytoCB
 
 _remove_level_callback = None
@@ -175,3 +175,6 @@ def open_levels_window():
     return CreateCard
 
 CreateCard = None
+
+if __name__ == "__main__":
+    messagebox.showerror("Dont open this file","This file is not mean to be open\nExecute the GD Level Requests shortcut to open GD TikTokLive")
