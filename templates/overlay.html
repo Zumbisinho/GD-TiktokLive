@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Overlay</title>
+    <img src="/static/title.png" class="mainTitle">
+</head>
+
+<body>
+    <div id="Main">
+        <section class="Template" id="Template">
+
+            <div class="Left">
+                <div class="NumberInList">
+                    <h1 class="NumInList">1º</h1>
+                </div>
+                <div class="Difficult">
+                    <img src="https://gdbrowser.com/assets/difficulties/insane.png" alt="" class="DifFace">
+                    <p class="DifName">Harder</p>
+                    <div class="Stars">
+                        <p class="StarsNumber">10</p>
+                        <img class="StarImage" src="https://gdbrowser.com/assets/star.png">
+                    </div>
+                    <div class="Coins">
+                        <img src="https://gdbrowser.com/assets/silvercoin.png" alt="1º Coin" class="Moedas coin1">
+                        <img src="https://gdbrowser.com/assets/silvercoin.png" alt="2º Coin" class="Moedas coin2">
+                        <img src="https://gdbrowser.com/assets/silvercoin.png" alt="3º Coin" class="Moedas coin3">
+                    </div>
+                </div>
+
+                <div class="Text">
+                    <h1 class="Name">Vai Morrer</h1>
+                    <h1 class="Author">By Zumbisinho</h1>
+                    <h2 class="Song">Vai morrer / Vale Vale</h2>
+                    <div class="Stats">
+                        <img src="https://gdbrowser.com/assets/time.png">
+                        <p class="Time">Long</p>
+                        <img src="https://gdbrowser.com/assets/download.png">
+                        <p class="Downloads">445</p>
+                        <img src="https://gdbrowser.com/assets/like.png">
+                        <p class="Likes">45</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="RequestBy">
+                <div class="Req">
+                    <h2 class="Requester">Requested By Zumbisinho</h2>
+                    <img class="RequesterImage"
+                        src="https://www.myinstants.com/media/instants_images/fire-in-the-hole-geometry-dash.png">
+                </div>
+                <div class="IdRow">
+                    <p class="LevelId">123234402</p>
+                </div>
+            </div>
+
+        </section>
+        <h1 class="MissingText" id="MissTXT"><span style="color: limegreen;">No Levels yet!</span> Type <span
+                style="color: dodgerblue;">!id 123456789</span> to add a <span style="color: limegreen;">Level</span>!
+        </h1>
+    </div>
+    <style>
+        @font-face {
+            font-family: Pusab;
+            src: url(https://gdbrowser.com/assets/Pusab.ttf);
+        }
+
+        .MissingText {
+            font-family: Pusab;
+            color: white;
+            -webkit-text-stroke-color: black;
+            -webkit-text-size-adjust: 100%;
+            font-size: 6vh;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            text-align: center;
+        }
+
+
+        section {
+            font-family: Pusab;
+            color: white;
+            -webkit-text-stroke-color: black;
+            -webkit-text-size-adjust: 100%;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #A1582C;
+            border-bottom: 0.8vh rgba(0, 0, 0, 0.4) solid;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            display: none;
+
+        }
+
+        h1 {
+            -webkit-text-stroke-width: 0.25vh;
+            font-size: 5vh;
+            font-weight: normal;
+            text-shadow: 0.375vh 0.5vh 0vh rgba(0, 0, 0, 0.3);
+
+        }
+
+        h2,
+        p {
+            -webkit-text-stroke-width: 0.14vh;
+            font-size: 3.5vh;
+            white-space: nowrap;
+            font-weight: normal;
+            text-shadow: 0.375vh 0.375vh 0vh rgba(0, 0, 0, 0.3);
+        }
+
+        .Stats {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            margin-bottom: 5%;
+
+
+        }
+
+        .Difficult {
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            max-width: 110px;
+            min-width: 110px;
+
+        }
+
+        .Text {
+            margin: 0px 5%;
+        }
+
+        .Left {
+            display: flex;
+            margin: 0px 20px;
+        }
+
+        .LevelId {
+
+            margin: 0;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: rgb(255, 200, 0);
+            font-size: 2.5vh;
+            -webkit-text-stroke-width: 0.16vh;
+        }
+
+        .IdRow {
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+
+        .Author {
+            color: #feb620;
+            -webkit-text-stroke-width: 0.2vh;
+            margin: 1% 0;
+            text-shadow: 0.375vh 0.375vh 0vh rgba(0, 0, 0, 0.3);
+        }
+
+        .Song {
+            color: #ffaabe;
+            margin: 0;
+            margin-top: 3%;
+            margin-bottom: 2%;
+
+        }
+
+        h1.Name {
+            font-size: 6vh;
+            margin: 0;
+            margin-top: 15px;
+            white-space: nowrap;
+
+        }
+
+        .Stats img {
+            height: 8%;
+            width: 8%;
+            margin: 1% 1%;
+        }
+
+        .Stats p {
+            margin: 0;
+            margin-right: 2%;
+        }
+
+        .StarImage {
+            width: 35%;
+            height: 35%;
+            margin-bottom: 1%;
+        }
+
+        .DifFace {
+            width: 73px;
+            height: 73px;
+            margin-bottom: 1%;
+        }
+
+        .Difficult p {
+            margin: 0;
+            white-space: inherit;
+            text-align: center;
+        }
+
+        .Coins {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+
+        }
+
+        .Moedas {
+            height: 30px;
+            width: 30px;
+            margin: 1%;
+            margin-top: 15%;
+        }
+
+        .Stars {
+            display: flex;
+            justify-content: center;
+        }
+
+        .DifName {
+            font-size: 3vh;
+        }
+
+        .Stars img {
+            margin-left: 4%;
+            font-size: 3.5vh;
+        }
+
+        .RequestBy {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .Requester {
+            margin: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .RequesterImage {
+            width: 15%;
+            margin: 5px;
+            margin-right: 10px;
+            border-radius: 50%;
+
+        }
+
+        .Req {
+            align-items: flex-end;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .NumInList {
+            margin: 0;
+            max-width: 78px;
+            min-width: 78px;
+            font-size: 8vh;
+        }
+
+        .mainTitle {
+            position: relative;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    </style>
+    <div id="mensagem"></div>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="/static/overlay.js"></script>
+</body>
+
+</html>

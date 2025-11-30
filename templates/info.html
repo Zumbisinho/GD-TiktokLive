@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+</head>
+
+<body>
+    <main>
+        <ul class="main" id="List">
+            <li class="Running">
+                <img src="/static/loadingCircle-uhd.png" alt="trobbler" class="rodador" id="Rot">
+                <h1>Searching <span class="UserName">User</span> Request<span id="pontos"></span></h1>
+            </li>
+            <li class="Success">
+                <img src="/static/correct.png" alt="">
+                <h1>Request of <span class="UserName">User</span> as Been Added!</h1>
+            </li>
+            <li class="Error">
+                <img src="/static/wrong.png" alt="">
+                <h1>Request from <span class="UserName">User</span> was Not Found!</h1>
+            </li>
+        </ul>
+    </main>
+
+    <style>
+        @font-face {
+            font-family: Pusab;
+            src: url(https://gdbrowser.com/assets/Pusab.ttf);
+        }
+
+
+
+        ul {
+            list-style-type: none;
+            font-family: Pusab;
+            color: white;
+            -webkit-text-stroke-color: black;
+            -webkit-text-size-adjust: 100%;
+            -webkit-text-stroke-width: 0.25vh;
+            font-size: 3.5vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        li {
+            display: none;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 40px;
+            filter: drop-shadow(0 0 2.75rem rgba(255, 255, 255, 0.2));
+        }
+
+        img {
+            width: 10vh;
+            height: 10vh;
+            margin: 0;
+
+        }
+
+        .Success img {
+            filter: drop-shadow(0 0 2.75rem rgba(46, 255, 77, 0.34)) ;
+
+        }
+
+        .Error img {
+            filter: drop-shadow(0 0 2.75rem rgba(255, 67, 46, 0.34));
+        }
+
+        #Rot {
+            filter: drop-shadow(0 0 2.75rem rgba(255, 255, 255, 0.54));
+            animation: spin 3s infinite linear;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes text {
+            0% {
+                content: '.';
+            }
+
+            50% {
+                content: '..';
+            }
+
+            100% {
+                content: '...';
+            }
+        }
+
+        @keyframes oldentry {
+            0% {
+                opacity: 0;
+                -webkit-text-stroke-color: white;
+                filter: drop-shadow(0 0 20vh rgb(255, 255, 255)) brightness(1000%);
+                transform: scale(1.5);
+                text-shadow: 0 0 10px white;
+
+            }
+
+            5% {
+                opacity: 100%;
+                -webkit-text-stroke-color: white;
+
+            }
+
+            7.5% {
+                -webkit-text-stroke-color: white
+            }
+
+            12.5% {
+                transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+                -webkit-text-stroke-color: white;
+                filter: drop-shadow(0 0 2.75rem rgba(255, 255, 255, 0.1)) brightness(100%);
+                text-shadow: 0 0 0px white;
+                transform: scale(1);
+
+            }
+
+            90% {
+                -webkit-text-stroke-color: #000000;
+                opacity: 1;
+            }
+            
+            100%{
+                opacity: 0;
+                display: none;
+            }
+        }
+        @keyframes entry {
+            0% {
+                opacity: 0;
+            }
+            5% {
+                opacity: 100%;
+            }
+            90% {
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+                display: none;
+            }
+        }
+        #pontos::after {
+            content: '...';
+            animation: text 3s infinite linear;
+        }
+
+        .Success,
+        .Error,
+        .Running {
+            animation: entry 4s ease-out;
+
+        }
+
+        main {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%)
+        }
+    </style>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="/static/info.js"></script>
+</body>
+
+</html>
