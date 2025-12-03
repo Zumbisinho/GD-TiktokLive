@@ -26,20 +26,29 @@ Here're some of the project's best features:
 
 <h2>🛠️ Installation Steps:</h2>
 
-<p>1. Creating a CloudFlare Account</p>
+<p>To use the aplication, you need to install cloudflared in your pc, to do this, dowload it via command(windows or MacOs) or via link</p>
+
+[CloudFlared Files](https://pkg.cloudflare.com/index.html)
+
+
+<p>Downloading the CloudFlare via command on the system</p>
+
+<p>Windows:</p>
 
 ```
-https://dash.cloudflare.com/sign-up
+winget install --id Cloudflare.cloudflared
 ```
 
-<p>2. Downloading the CloudFlare on the system</p>
+<p>MacOS:</p>
 
 ```
-Windows: winget install --id Cloudflare.cloudflared
-MacOS: brew install cloudflared
-Linux: https://pkg.cloudflare.com/index.html
+brew install cloudflared
 ```
-### Need to finish this installation guide
+<p>Linux:</p>
+
+[https://pkg.cloudflare.com/index.html]( https://pkg.cloudflare.com/index.html)
+
+### You dont need a account and python installed (Because of the virtual env)
   
   
 <h2>💻 Built with</h2>
