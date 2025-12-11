@@ -23,15 +23,14 @@ Here're some of the project's best features:
 *   Similar UI from Geometry Dash Online levels
 *   Easier for the creator and the viewer to play and send levels
 *   Automatic CloudFlare Tunnel Link changer
+*   Easy to use and install
 
 <h2>🛠️ Installation Steps:</h2>
 
-<p>To use the aplication, you need to install cloudflared in your pc, to do this, dowload it via command(windows or MacOs) or via link</p>
+
+<p>1: Downloading the CloudFlare via command on the system</p>
 
 [CloudFlared Files](https://pkg.cloudflare.com/index.html)
-
-
-<p>Downloading the CloudFlare via command on the system</p>
 
 <p>Windows:</p>
 
@@ -48,16 +47,33 @@ brew install cloudflared
 
 [https://pkg.cloudflare.com/index.html]( https://pkg.cloudflare.com/index.html)
 
-### You dont need a account and python installed (Because of the virtual env)
-  
+<p>2: Installing Python and Libs</p>
+
+<p>Download Python from python.org (Version 3.8 and above are recomended)</p>
+
+[https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+<p>Download Required Libs</p>
+
+```
+cd path/to/your/directory/
+
+pip install requirements.txt
+
+```
+
+<h2>⚙️ How to Execute the App:</h2>
+
+<p>You can run the **serverInterface.py** with **python.exe** or using the **run.bat** file</p>
   
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
 
-*   Python
+*   [Python 3](https://www.python.org/downloads/)
+*   [Flask FrameWork](https://flask.palletsprojects.com/en/stable/installation/)
 *   [TikTok Live Lib](https://pypi.org/project/TikTokLive/)
-*   CloudFlare Quick Tunnels
+*   [CloudFlare Quick Tunnels](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/)
 *   HTML + CSS + JavaScript
 
 ### Made with 💖 by Zumbisinho
