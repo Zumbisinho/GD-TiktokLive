@@ -28,13 +28,14 @@ Here're some of the project's best features:
 <h2>🛠️ Installation Steps:</h2>
 
 
-<p>1: Downloading the CloudFlare via command on the system</p>
+<h3>1: Downloading the CloudFlare via command on the system</h3>
+
 
 [CloudFlared Files](https://pkg.cloudflare.com/index.html)
 
 <p>Windows:</p>
 
-```
+```batch
 winget install --id Cloudflare.cloudflared
 ```
 
@@ -47,13 +48,16 @@ brew install cloudflared
 
 [https://pkg.cloudflare.com/index.html]( https://pkg.cloudflare.com/index.html)
 
-<p>2: Installing Python and Libs</p>
+---
+
+<h3>2: Installing Python and Libs:</h3>
+
 
 <p>Download Python from python.org (Version 3.8 and above are recomended)</p>
 
 [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-<p>Download Required Libs</p>
+<p>After downloading python,Execute this command to install all the modules needed to execute the GD RL</p>
 
 ```
 cd path/to/your/directory/
